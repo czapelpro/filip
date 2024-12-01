@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="hobby">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="about" type="xs:string"/>
+                <xs:element name="travel">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="place" maxOccurs="3">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="description" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+							<xs:element name="gallery" type="gallerytype"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="books">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="book" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="author" type="xs:string"/>
+                                        <xs:element name="description" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="movies">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="movie" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="director" type="xs:string"/>
+                                        <xs:element name="description" type="xs:string"/>
+										<xs:element ref="link"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="animals">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="animal" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="description" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+							<xs:element name="gallery" type="gallerytype"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+	<xs:complexType name="gallerytype">
+		<xs:sequence>
+			<xs:element ref="image" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="sourcetype">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="source" use="required" type="xs:anyURI"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:element name="link" type="sourcetype"/>
+	<xs:element name="image" type="sourcetype"/>
+</xs:schema>

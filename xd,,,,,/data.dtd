@@ -1,0 +1,20 @@
+<!ELEMENT hobby (about, travel, books, movies, animals)>
+<!ELEMENT about (#PCDATA)>
+<!ELEMENT travel (place+ , gallery)>
+<!ELEMENT place (name, description)>
+<!ELEMENT gallery (image*)>
+<!ELEMENT image (#PCDATA)>
+<!ATTLIST image source CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT books (book+)>
+<!ELEMENT book (title, author, description)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT movies (movie+)>
+<!ELEMENT movie (title, director, description, link)>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link source CDATA #REQUIRED>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT animals (animal+ , gallery)>
+<!ELEMENT animal (name, description)>

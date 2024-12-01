@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hobby SYSTEM "data.dtd">
+<hobby>
+	<about>
+		Witam Cię na mojej stronie! Nazywam się Filip i jestem pasjonatem podróży, książek i filmów.
+	</about>
+	<travel>
+		<place>
+			<name>Paryż</name>
+			<description>Miasto Świateł, znane z wieży Eiffla i pysznej kuchni.</description>
+		</place>
+		<place>
+			<name>Nowy Jork</name>
+			<description>Miasto, które nigdy nie śpi, pełne kultury i rozrywki.</description>
+		</place>
+		<place>
+			<name>Tokio</name>
+			<description>Miejsce, gdzie tradycja spotyka nowoczesność.</description>
+		</place>
+		<gallery>
+			<image source="zdj/paryz.jpeg">Paryż</image>
+			<image source="zdj/newjork.jpg">Nowy Jork</image>
+			<image source="zdj/tokio.jpg">Tokio</image>
+		</gallery>
+	</travel>
+	<books>
+		<book>
+			<title>Wielki Gatsby</title>
+			<author>F. Scott Fitzgerald</author>
+			<description>Klasyczna powieść o amerykańskim śnie.</description>
+		</book>
+		<book>
+			<title>1984</title>
+			<author>George Orwell</author>
+			<description>Przerażająca wizja totalitarnego świata.</description>
+		</book>
+		<book>
+			<title>Władca Pierścieni</title>
+			<author>J.R.R. Tolkien</author>
+			<description>Epicka opowieść o przyjaźni i odwadze w walce ze złem.</description>
+		</book>
+	</books>
+	<movies>
+		<movie>
+			<title>Incepcja</title>
+			<director>Christopher Nolan</director>
+			<description>Film, który zmusza do refleksji nad rzeczywistością i snem.</description>
+			<link source="https://www.filmweb.pl/film/Incepcja-2010-500891">Incepcja</link>
+		</movie>
+		<movie>
+			<title>Interstellar</title>
+			<director>Christopher Nolan</director>
+			<description>Epicka podróż przez czas i przestrzeń.</description>
+			<link source="https://www.filmweb.pl/film/Zielona+mila-1999-862">Zielona mila</link>
+		</movie>
+		<movie>
+			<title>Zielona Mila</title>
+			<director>Frank Darabont</director>
+			<description>Poruszająca historia o nadziei i ludzkości.</description>
+			<link source="https://www.filmweb.pl/film/Interstellar-2014-375629">Interstellar</link>
+		</movie>
+	</movies>
+	<animals>
+		<animal>
+			<name>Pies</name>
+			<description>Najlepsi przyjaciele człowieka, zawsze wierni i pełni miłości.</description>
+		</animal>
+		<animal>
+			<name>Kot</name>
+			<description>Tajemnicze i niezależne stworzenia, które potrafią być bardzo przywiązane.</description>
+		</animal>
+		<animal>
+			<name>Ptak</name>
+			<description>Fascynujące stworzenia, które można spotkać w wielu miejscach na świecie.</description>
+		</animal>
+		<gallery>
+			<image source="zdj/dog.jpeg">Pies</image>
+			<image source="zdj/cat.jepg.jpeg">Kot</image>
+			<image source="zdj/bird.jpeg">Ptak</image>
+		</gallery>
+	</animals>
+</hobby>
